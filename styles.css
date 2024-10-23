@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-image: url('lelystad.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%; 
+}
+
+
+.left-content, .right-content {
+    margin-bottom: 20px;
+}
+
+
+.article {
+    background-color: #c0a8c5;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.article h2 {
+    margin-bottom: 15px; 
+}
+
+.article p {
+    margin-bottom: 15px; 
+}
+
+.article img {
+    max-width: 100%; 
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #4e5257;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    main {
+        display: flex; 
+        flex-direction: column; 
+        max-width: 100%; 
+    }
+
+    .left-content, .right-content {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .article {
+        flex-direction: column;
+    }
+
+    .article img {
+        max-width: 100%; 
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .article p {
+        margin-left: 0; 
+    }
+}
+
+
+@media (min-width: 1025px) {
+    main {
+        display: flex; 
+        justify-content: space-between;
+        max-width: 1200px; 
+    }
+
+    .left-content {
+        width: 30%; 
+    }
+
+    .right-content {
+        width: 65%; 
+    }
+
+    .article {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .article img {
+        max-width: 300px; 
+        margin-left: 20px;
+    }
+
+    .article p {
+        margin-left: 20px; 
+    }
+}
